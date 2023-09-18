@@ -248,7 +248,7 @@ export default {
         { step: "demo-card demo-card--step1", name: "LAPTOP STORE", des: "Ecommerce Website With Django REST Framework & NuxtJs", image: "170959998-2c700593-52df-4ccf-ac58-def41a258212.png" },
         { step: "demo-card demo-card--step2", name: "PHOTO EDITOR", des: "Photo Editing App Built With Jetpack Compose ", image: "249319500-65987689-8afa-490e-b6bb-dce76e6aa01c.png" },
         { step: "demo-card demo-card--step3", name: "FRUIT-NINJA", des: "Game Fruit-Ninja built with Unity", image: "376355443_1489736278466776_7192872528555101855_n.png" },
-        { step: "demo-card demo-card--step4", name: "DataMining", des: "Implement bayesian, K-means, KNN and visualization algorithms using Turtle library", image: "373364440_1429485670954303_2631368429310991096_n.png" },
+        { step: "demo-card demo-card--step4", name: "DataMining", des: "Implement bayesian, K-means, KNN and visualization algorithms using Turtle library", image: "Untitled.png" },
         { step: "demo-card demo-card--step5", name: "COMPOSE-Self-Study", des: "Just Some UI Built with Jetpack Compose", image: "373364440_1429485670954303_2631368429310991096_n.png" },
       ],
     }
