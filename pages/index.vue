@@ -166,10 +166,10 @@
               <div class="social mb-4">
                 <h3>Stay in touch</h3>
                 <ul class="list-unstyled">
-                  <li class="in"><a href="#"><img src="/images/icon/facebook-icon-512x511-ircc9ves.png" class="icon-social" /></a></li>
-                  <li class="fb"><a href="#"><img src="/images/icon/4138124.png" class="icon-social" /></a></li>
-                  <li class="tw"><a href="#"><img src="/images/icon/github-512.webp" class="icon-social"/></a></li>
-                  <li class="pin"><a href="#"><img src="/images/icon/4138198.png" class="icon-social"/></a></li>
+                  <li class="in"><a href="https://www.facebook.com/quangthang46/"><img src="/images/icon/facebook-icon-512x511-ircc9ves.png" class="icon-social" /></a></li>
+                  <li class="fb"><a href="https://www.instagram.com/pqt46/"><img src="/images/icon/4138124.png" class="icon-social" /></a></li>
+                  <li class="tw"><a href="https://github.com/thangpq46"><img src="/images/icon/github-512.webp" class="icon-social"/></a></li>
+                  <li class="pin"><a href="https://www.tiktok.com/@qthang46"><img src="/images/icon/4138198.png" class="icon-social"/></a></li>
                 </ul>
               </div>
 
