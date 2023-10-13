@@ -92,7 +92,8 @@
           </div>
           <div class="body">
             <h6>{{ project.des }}</h6>
-            <img :src="`/images/projects/${project.image}`" alt="Graphic">
+            <a :href="`${project.purl}`"><img :src="`/images/projects/${project.image}`" alt="Graphic"></a>
+            
           </div>
         </div>
       </div>
@@ -101,7 +102,7 @@
 
     <div class="container" id=experience>
         <div ><h2 id="section-title">EXPERIENCE</h2>
-          <div class="timeline-item" date-is='Jun 2022 - Jun 2023'>
+          <div class="timeline-item" date-is='Aug 2022 - Jun 2023'>
             <h1>ASIAN MOBILE SOFTWARE</h1>
             <h4>
               I started my programming career here as an android developer.
@@ -245,11 +246,11 @@ export default {
         // { span: "span-1", c: "c-4", url: "/images/me/PXL_20230612_030822798.jpg" },
       ],
       PROJECTS: [
-        { step: "demo-card demo-card--step1", name: "LAPTOP STORE", des: "Ecommerce Website With Django REST Framework & NuxtJs", image: "170959998-2c700593-52df-4ccf-ac58-def41a258212.png" },
-        { step: "demo-card demo-card--step2", name: "PHOTO EDITOR", des: "Photo Editing App Built With Jetpack Compose ", image: "249319500-65987689-8afa-490e-b6bb-dce76e6aa01c.png" },
-        { step: "demo-card demo-card--step3", name: "FRUIT-NINJA", des: "Game Fruit-Ninja built with Unity", image: "376355443_1489736278466776_7192872528555101855_n.png" },
-        { step: "demo-card demo-card--step4", name: "DataMining", des: "Implement bayesian, K-means, KNN and visualization algorithms using Turtle library", image: "Untitled.png" },
-        { step: "demo-card demo-card--step5", name: "COMPOSE-Self-Study", des: "Just Some UI Built with Jetpack Compose", image: "373364440_1429485670954303_2631368429310991096_n.png" },
+        { step: "demo-card demo-card--step1", name: "LAPTOP STORE", des: "Python, Django REST Framework, NuxtJs, Vue, Axios, BootstrapVue, Css, MySQL,Coverage, Django CorsHeaders", image: "170959998-2c700593-52df-4ccf-ac58-def41a258212.png",purl:"https://github.com/thangpq46/TKVLTWCC" },
+        { step: "demo-card demo-card--step2", name: "QTOR - PHOTO EDITOR", des: "Kotlin, Jetpack Compose, MvvM, OpenCV, Firebase,Google Mlkit", image: "249319500-65987689-8afa-490e-b6bb-dce76e6aa01c.png",purl:"https://github.com/thangpq46/Qtor" },
+        { step: "demo-card demo-card--step3", name: "FRUIT-NINJA", des: "Unity,C#", image: "376355443_1489736278466776_7192872528555101855_n.png",purl:"https://github.com/thangpq46/Fruit-Ninja" },
+        { step: "demo-card demo-card--step4", name: "PDF Reader", des: "Jetpack Compose, Kotlin, SQLite, MVVM, IText, Room, Coroutines", image: "pdf.png",purl:"https://drive.google.com/file/d/1-HYLcrP5SA-6RbPJD4vJXydmSX0TPA71/view?usp=sharing" },
+        { step: "demo-card demo-card--step5", name: "COMPOSE-Self-Study", des: "Just Some UI Built with Jetpack Compose", image: "373364440_1429485670954303_2631368429310991096_n.png",purl:"https://github.com/thangpq46/ComposeUI" },
       ],
     }
   }
