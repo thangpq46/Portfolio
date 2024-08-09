@@ -1,11 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   /* transition: 0.3s; */
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
 
 /* #Primary
 ================================================== */
@@ -985,7 +987,6 @@ body {
 
 /* EXP */
 
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
 
 body {
   font-size: 14px;
