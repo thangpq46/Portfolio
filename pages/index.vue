@@ -195,7 +195,6 @@
             <div>
               <h2 class="skills-title">FRAMEWORKS &amp; TOOLS </h2>
               <img  src="https://skillicons.dev/icons?i=androidstudio,django,github,firebase,opencv,regex,vscode,postman,nuxtjs,figma&theme=light&perline=6" />
-              <!-- <b-img thumbnail v-for="image in LANGUAGES" :key="image" :src="image" width="80" fluid alt="skills image" /> -->
             </div>
 
           </b-col>
@@ -304,4 +303,5 @@ export default {
     }
   }
 }
+
 </script>
