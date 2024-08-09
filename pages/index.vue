@@ -59,13 +59,10 @@
           <div class="owl-carousel slide-one-item">
 
             <div class="d-md-flex testimony-29101 align-items-stretch">
-              <div class="image" style="background-image: url('/images/me/PXL_20230609_015239010.jpg');"></div>
+              <div class="image" style="background-image: url('/images/me/PXL_20240714_112733772.jpg');"></div>
               <div class="text">
                 <blockquote>
-                  <h6 id="text-des">&ldquo;I'm a developer with one year of experience as
-                    an Android developer . I'm hard-working and
-                    motivated, and I'm always willing to learn new
-                    things.&rdquo;</h6>
+                  <h6 id="text-des">&ldquo;Android Developer with two years of experience, skilled in working independently to deliver high-quality mobile apps. Proactive in learning new technologies and driven to create efficient, user-friendly applications.&rdquo;</h6>
 
                   <div class="author">&mdash; Phan Quang Thang</div>
                 </blockquote>
@@ -80,7 +77,67 @@
 
 
     </div>
-    <section id=timeline>
+
+    <section id="timeline" class="my-5">
+  <h2 id="section-title" class="text-center mb-4">PERSONAL PROJECT
+  </h2>
+  <div class="container">
+    <div class="row">
+      <div
+        v-for="(project, index) in PROJECTS"
+        :key="index"
+        class="col-md-6 mb-4"
+      >
+        <div class="card h-100 border-0 shadow-sm" style="border-radius: 20px;">
+          <div class="card-header bg-primary text-white" style="border-radius: 20px 20px 0 0;">
+            <h5 class="mb-0">{{ project.name }}</h5>
+          </div>
+          <div class="card-body d-flex flex-column" style="border-radius: 0 0 20px 20px;">
+            <h6 class="card-text text-dark flex-grow-1">{{ project.des }}</h6>
+            <div class="mt-3">
+              <h6 class="font-weight-bold">Technologies Used:</h6>
+              <ul class="list-unstyled">
+                <li v-for="(tech, techIndex) in project.technologies" :key="techIndex" class="badge badge-pill badge-info mr-2 mb-2">{{ tech }}</li>
+              </ul>
+            </div>
+            <a :href="project.purl" class="btn btn-outline-primary mt-3 align-self-start" target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+    <section id="timeline" class="my-5">
+  <h2 id="section-title" class="text-center mb-4">Projects</h2>
+  <div class="container">
+    <div class="row">
+      <div
+        v-for="(project, index) in PROJECTS"
+        :key="index"
+        class="col-md-6 mb-4"
+      >
+        <div class="card h-100 border-0 shadow-sm" style="border-radius: 20px;">
+          <div class="card-header bg-primary text-white" style="border-radius: 20px 20px 0 0;">
+            <h5 class="mb-0">{{ project.name }}</h5>
+          </div>
+          <div class="card-body d-flex flex-column" style="border-radius: 0 0 20px 20px;">
+            <h6 class="card-text text-dark flex-grow-1">{{ project.des }}</h6>
+            <a :href="project.purl" class="btn btn-outline-primary mt-3 align-self-start" target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+    <!-- <section id=timeline>
       <h2 id="section-title">PROJECTS</h2>
       <div class="demo-card-wrapper">
         <div v-for="(project, index) in PROJECTS" :key="project" :class="`demo-card ${project.step}`">
@@ -97,7 +154,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <div class="container" id=experience>
@@ -105,9 +162,18 @@
           <div class="timeline-item" date-is='Aug 2022 - Jun 2023'>
             <h1>ASIAN MOBILE SOFTWARE</h1>
             <h4>
-              I started my programming career here as an android developer.
+              Developed Android apps with Kotlin, utilizing Firebase, ML Kit, MediaPipe, OpenCV,... Focused on enhancing app functionality and optimizing performance.
             </h4>
-          </div></div>
+          </div>
+          <div class="timeline-item" date-is='Sept 2023 - Aug 2024'>
+            <h1>GAMMAPP LTD</h1>
+            <h4>
+              Developed Android apps with Kotlin, working with Android Room, SQLite, API interaction, JSON, and custom views. Additionally, worked with Swift on iOS, using Realm, SQLite, and GRDB for database management.
+            </h4>
+          </div>
+        
+        </div>
+          
 
 
     </div>
@@ -118,7 +184,7 @@
           <b-col md="4">
             <div>
               <h2 class="skills-title">PROGRAMMING LANGUAGES</h2>
-              <img  src="https://skillicons.dev/icons?i=java,kotlin,cs,css,cpp,html,vue,python&theme=light&perline=6" />
+              <img  src="https://skillicons.dev/icons?i=kotlin,java,swift,python,cs,css,cpp,html,vue&theme=light&perline=6" />
               <!-- <img v-for="image in LANGUAGES" :key="image" :src="image"
                 style="width: 70px; height: 70px; object-fit: cover;" /> -->
               <!-- <b-img thumbnail v-for="image in LANGUAGES" :key="image" :src="image" width="80" fluid alt="skills image" /> -->
@@ -128,7 +194,7 @@
           <b-col md="4">
             <div>
               <h2 class="skills-title">FRAMEWORKS &amp; TOOLS </h2>
-              <img  src="https://skillicons.dev/icons?i=androidstudio,django,unity,postman,nuxtjs,figma&theme=light&perline=6" />
+              <img  src="https://skillicons.dev/icons?i=androidstudio,django,github,firebase,opencv,regex,vscode,postman,nuxtjs,figma&theme=light&perline=6" />
               <!-- <b-img thumbnail v-for="image in LANGUAGES" :key="image" :src="image" width="80" fluid alt="skills image" /> -->
             </div>
 
@@ -144,7 +210,6 @@
       </section>
 
     </div>
-
     <div class="container mt-1">
       <section id=photos>
         <h2 id="section-title">PHOTOS</h2>
@@ -206,52 +271,36 @@ export default {
       ],
       MYPHOTOS: [
         { span: "span-1", c: "c-1", url: "/images/me/00000IMG_00000_BURST20190216171620973_COVER.jpg" },
-        { span: "span-2", c: "c-2", url: "/images/me/2.jpg" },
-        { span: "span-1", c: "c-2", url: "/images/me/20210421_145053.jpg" },
-        { span: "span-2", c: "c-4", url: "/images/me/20230814_084612_497.jpg" },
-        { span: "span-1", c: "c-4", url: "/images/me/a.jpg" },
+        { span: "span-2", c: "c-2", url: "/images/me/PXL_20240418_135809702.MP.jpg" },
+        { span: "span-1", c: "c-2", url: "/images/me/PXL_20240420_112351861.jpg" },
+        { span: "span-2", c: "c-4", url: "/images/me/PXL_20240420_072312313.jpg" },
+        { span: "span-1", c: "c-4", url: "/images/me/PXL_20240601_125407730.jpg" },
         { span: "span-1", c: "c-5", url: "/images/me/c.jpg" },
-        { span: "span-2", c: "c-2", url: "/images/me/d.jpg" },
-        { span: "span-1", c: "c-5", url: "/images/me/e.jpg" },
-        { span: "span-1", c: "c-5", url: "/images/me/E7D_1261~2.JPG" },
+        { span: "span-2", c: "c-2", url: "/images/me/PXL_20240420_073159792.jpg" },
+        { span: "span-1", c: "c-5", url: "/images/me/PXL_20240713_132355640.jpg" },
+        { span: "span-1", c: "c-5", url: "/images/me/PXL_20240419_063256839.MP.JPG" },
         { span: "span-1", c: "c-2", url: "/images/me/f.jpg" },
         { span: "span-1", c: "c-2", url: "/images/me/g.jpg" },
-        { span: "span-3", c: "c-1", url: "/images/me/IMG_20230816_062046_832.webp" },
+        { span: "span-3", c: "c-1", url: "/images/me/PXL_20240419_082620007.MP.jpg" },
         { span: "span-2", c: "c-2", url: "/images/me/IMG_5680.JPG" },
-        { span: "span-2", c: "c-2", url: "/images/me/IMG_20190216_163545.jpg" },
+        { span: "span-2", c: "c-2", url: "/images/me/original_68b962c7-3f4d-49f3-892f-753f771045ca_PXL_20240713_140507700.jpg" },
         { span: "span-1", c: "c-4", url: "/images/me/E7D_1261~2.JPG" },
-        { span: "span-1", c: "c-4", url: "/images/me/IMG_1688532535572_1688554125022~2.jpg" },
-        { span: "span-2", c: "c-1", url: "/images/me/IMG_1688532535592_1688554132064~3.jpg" },
+        { span: "span-1", c: "c-4", url: "/images/me/PXL_20240601_141334096.MP.jpg" },
+        { span: "span-2", c: "c-1", url: "/images/me/PXL_20240428_141646989~3.jpg" },
         { span: "span-1", c: "c-2", url: "/images/me/original_91144d98-a737-40da-9d42-7693b9e30cef_PXL_20230908_110045522.jpg" },
         { span: "span-1", c: "c-2", url: "/images/me/PXL_20220916_224510370.jpg" },
         { span: "span-1", c: "c-4", url: "/images/me/PXL_20220917_223208400.MP.jpg" },
-        { span: "span-1", c: "c-4", url: "/images/me/PXL_20221007_142156155.jpg" },
+        { span: "span-1", c: "c-4", url: "/images/me/PXL_20231230_234309000~2.jpg" },
         { span: "span-1", c: "c-4", url: "/images/me/PXL_20230223_102453301.jpg" },
         { span: "span-1", c: "c-1", url: "/images/me/PXL_20230311_101713729.jpg" },
-        { span: "span-1", c: "c-2", url: "/images/me/PXL_20230429_085052589.jpg" },
-        // { span: "span-1", c: "c-2", url: "/images/me/PXL_20230506_104255465.jpg" },
-        // { span: "span-2", c: "c-4", url: "/images/me/PXL_20230506_110309946.jpg" },
-        // { span: "span-1", c: "c-4", url: "/images/me/PXL_20230506_110435112.jpg" },
-        // { span: "span-2", c: "c-2", url: "/images/me/PXL_20230506_125613011.MP.jpg" },
-        // { span: "span-1", c: "c-4", url: "/images/me/PXL_20230521_090207171.jpg" },
-        // { span: "span-1", c: "c-4", url: "/images/me/PXL_20230528_011023785.jpg" },
-        // { span: "span-3", c: "c-4", url: "/images/me/PXL_20230602_090456062~2.jpg" },
-        // { span: "span-1", c: "c-1", url: "/images/me/PXL_20230609_015401216.jpg" },
-        // { span: "span-2", c: "c-1", url: "/images/me/PXL_20230719_225006358.jpg" },
-        // { span: "span-2", c: "c-2", url: "/images/me/PXL_20230801_095512309~2.jpg" },
-        // { span: "span-1", c: "c-2", url: "/images/me/PXL_20230902_002008947~2.jpg" },
-
-        // // { span: "span-2", c: "c-4", url: "/images/me/PXL_20230901_214607429.NIGHT.jpg" },
-        // { span: "span-1", c: "c-4", url: "/images/me/PXL_20230811_104750176~3.jpg" },
-        // { span: "span-1", c: "c-4", url: "/images/me/PXL_20230612_030822798.jpg" },
+        { span: "span-1", c: "c-2", url: "/images/me/PXL_20240713_135101402.MP.jpg" },
       ],
       PROJECTS: [
-        { step: "demo-card demo-card--step1", name: "LAPTOP STORE", des: "Python, Django REST Framework, NuxtJs, Vue, Axios, BootstrapVue, Css, MySQL,Coverage, Django CorsHeaders", image: "170959998-2c700593-52df-4ccf-ac58-def41a258212.png",purl:"https://github.com/thangpq46/TKVLTWCC" },
-        { step: "demo-card demo-card--step2", name: "QTOR - PHOTO EDITOR", des: "Kotlin, Jetpack Compose, MvvM, OpenCV, Firebase,Google Mlkit", image: "249319500-65987689-8afa-490e-b6bb-dce76e6aa01c.png",purl:"https://github.com/thangpq46/Qtor" },
-        { step: "demo-card demo-card--step3", name: "FRUIT-NINJA", des: "Unity,C#", image: "376355443_1489736278466776_7192872528555101855_n.png",purl:"https://github.com/thangpq46/Fruit-Ninja" },
-        { step: "demo-card demo-card--step4", name: "PDF Reader", des: "Jetpack Compose, Kotlin, SQLite, MVVM, IText, Room, Coroutines", image: "pdf.png",purl:"https://drive.google.com/file/d/1-HYLcrP5SA-6RbPJD4vJXydmSX0TPA71/view?usp=sharing" },
-        { step: "demo-card demo-card--step5", name: "COMPOSE-Self-Study", des: "Just Some UI Built with Jetpack Compose", image: "373364440_1429485670954303_2631368429310991096_n.png",purl:"https://github.com/thangpq46/ComposeUI" },
-      ],
+      { step: "demo-card demo-card--step4", name: "PDF Reader", des: "PDF application with features including merging and splitting PDFs, converting images to PDF, editing PDF metadata,extracting text from PDFs, reordering pages, and exporting pages as images.", image: "pdf.png",purl:"https://drive.google.com/file/d/1-HYLcrP5SA-6RbPJD4vJXydmSX0TPA71/view?usp=sharing", technologies: ["ITextPdf", "Android Jetpack"] },   
+        { step: "demo-card demo-card--step1", name: "Laptop Store", des: "Website with a backend server built using Django Rest Framework and a frontend created with NuxtJs.", image: "170959998-2c700593-52df-4ccf-ac58-def41a258212.png",purl:"https://github.com/thangpq46/TKVLTWCC" , technologies: ["Django REST framework", "Nuxtjs"," MySQL"," Simple JWT","Axios", "CorHeader","Coverage"]},
+        { step: "demo-card demo-card--step2", name: "Qtor - Photor Editor", des: "Photo editor application with features including object removal, brightness and saturation adjustments, and adding stickers,timestamps, and text to images.", image: "249319500-65987689-8afa-490e-b6bb-dce76e6aa01c.png",purl:"https://github.com/thangpq46/Qtor" , technologies: ["Kotlin", "Custom View", "ML Kit", "OpenCV", "Firebase", "Android Jetpack"]},
+        { step: "demo-card demo-card--step3", name: "Easy Notebook", des: "Simple Note application.", image: "376355443_1489736278466776_7192872528555101855_n.png",purl:"https://github.com/thangpq46/Fruit-Ninja", technologies: ["Android Jetpack", "Room"] },
+           ],
     }
   }
 }
